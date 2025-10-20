@@ -74,9 +74,9 @@ body {
     margin: 0px 0 10px 0;
 }
 
-/* MEDIA QUERY */
+/* MEDIA QUERIES */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .profileCard {
         position: relative;
         width: 400px;
@@ -86,13 +86,14 @@ body {
         display: flex;
         align-items: center;
         gap: 0;
-        padding: 30px 40px 20px 80px;
+        padding: 20px 60px 20px 90px;
         font-size: 92%;
     }
 
     .profileCard img {
         position: absolute;
         left: -75px;
+        right: auto;
         top: 28%;
         height: 150px;
         width: 150px;
@@ -137,5 +138,16 @@ body {
         font-weight: 300;
         width: fit-content;
         margin: 0px 0 10px 0;
+    }
+}
+
+@media (min-width: 1366px) {
+    .profileCard {
+        padding: 20px 90px 20px 60px;
+    }
+
+    .profileCard img {
+        right: -75px;
+        left: auto;
     }
 }
